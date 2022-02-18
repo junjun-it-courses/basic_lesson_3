@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Details</title>
+    <style>
+        div {
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        details {
+            background: #ccc;
+            padding: 10px ;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <h1>Details</h1>
+</div>
+
+
+<!--
+    <details> - создает интерактивный элемент при нажатии на который пользователю
+    будет показана дополнительная информация.
+
+    Обычно используется в паре с тегом <summary>.
+
+    Этот элемент практически не используется так как является стандартным и
+    тяжел для стилизации через CSS. Обычно если нужен элемент с подобным
+    функционалом его создают из базовых тегов используя HTML + CSS + JavaScript.
+-->
+
+
+<div>
+
+    <details>
+        <summary>Описание</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe?</p>
+    </details>
+
+</div>
+
+
+<!--
+    Имеет атрибут open при наличии которого браузер сразу будет показывать скрытый
+    контент
+ -->
+
+
+<div>
+
+    <details open>
+        <summary>Описание</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe?</p>
+    </details>
+
+</div>
+
+
+<!-- Как вы могли заметить текст из тега <summary> стал заголовком <details> -->
+
+</body>
+</html>

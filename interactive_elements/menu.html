@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+
+  <style>
+    div {
+      max-width: 1200px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    menu {
+      /*background: #ccc;*/
+      /*padding: 10px ;*/
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <h1>Menu</h1>
+</div>
+
+
+<!--
+  Тег <menu> является семантической заменой тега <ul>, на данный момент тег <menu>
+  является экспериментальной технологией и его лучше не использовать, так как не
+  все браузеры его могут поддерживать.
+-->
+
+<menu type="context" id="popup-menu">
+  <menuitem>Action</menuitem>
+  <menuitem>Another action</menuitem>
+  <hr/>
+  <menuitem>Separated action</menuitem>
+</menu>
+
+
+<hr>
+
+<menu type="toolbar">
+  <li>
+    <button type="menu" menu="file-menu">File</button>
+    <menu type="context" id="file-menu">
+      <menuitem label="New..." onclick="newFile()"></menuitem>
+        <menuitem label="Save..." onclick="saveFile()"></menuitem>
+    </menu>
+  </li>
+  <li>
+    <button type="menu" menu="edit-menu">Edit</button>
+    <menu type="context" id="edit-menu">
+      <menuitem label="Cut..." onclick="cutEdit()"></menuitem>
+      <menuitem label="Copy..." onclick="copyEdit()"></menuitem>
+      <menuitem label="Paste..." onclick="pasteEdit()"></menuitem>
+    </menu>
+  </li>
+</menu>
+
+
+<!--
+  В спецификации HTML4 <menu> работал по другом, но с выходом стандарта HTML5
+  логика тега <menu> была изменена, но на данный момент его практически не
+  поддерживают никакие браузеры.
+-->
+
+
+</body>
+</html>

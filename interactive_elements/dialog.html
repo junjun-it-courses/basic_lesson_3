@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dialog</title>
+    <style>
+        div {
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        dialog {
+            background: #ccc;
+            padding: 10px ;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <h1>Dialog</h1>
+</div>
+
+<!--
+    <dialog> - создает интерактивный элемент при нажатии на который пользователю
+    будет показано всплывающее окно с контентом.
+
+    Этот элемент практически не используется так как является стандартным и
+    тяжел для стилизации через CSS. Обычно если нужен элемент с подобным
+    функционалом его создают из базовых тегов используя HTML + CSS + JavaScript.
+-->
+
+
+<!-- В данном случае мы ничего не увидим так как по-умолчанию диалог скрыт -->
+
+<div>
+
+    <dialog>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur cupiditate eos, excepturi inventore iste libero perferendis quibusdam reiciendis soluta vel veritatis voluptate voluptates! Blanditiis laborum quos repellat vero voluptatem?
+    </dialog>
+
+</div>
+
+
+<!--
+  Для того, чтобы открыть диалог, нам нужно добавить ему атрибут open
+ -->
+
+
+
+<div>
+
+    <dialog id="favDialog" open>
+        <form method="dialog">
+            <p><label>Favorite animal:
+                <select>
+                    <option></option>
+                    <option>Brine shrimp</option>
+                    <option>Red panda</option>
+                    <option>Spider monkey</option>
+                </select>
+            </label></p>
+            <menu>
+                <button value="cancel">Cancel</button>
+                <button id="confirmBtn" value="default">Confirm</button>
+            </menu>
+        </form>
+    </dialog>
+
+
+</div>
+
+
+
+
+</body>
+</html>

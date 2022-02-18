@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--
+      Способ #2 - тег <style>
+
+      Внутри тега <style> мы можем писать стили, идентифицируя нужные нам теги
+      по их аттрибутам, именам и тд. (селектору тега).
+    -->
+
+    <style>
+        div {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: antiquewhite;
+            padding: 10px 20px;
+        }
+    </style>
+
+
+    <!--
+        Способ #3 - отдельный файл
+
+        Самое лучшее что можно придумать, это подключение отдельного CSS файла
+        к нашему проекту. Делается это через тег <link>
+        Атрибуты:
+
+        rel - должен иметь значение stylesheet
+        href - ссылку или путь к файлу .css
+    -->
+    <link rel="stylesheet" href=".././css/style.css">
+
+
+    <!--
+        Способ #4 - отдельный файл через тег <style>
+
+        Не рекомендую вам так делать, лучше старайтесь всегда когда возможно
+        подключать свои .css файлы через тег link.
+
+        Такой способ практически ничем не отличатся от подключения через <link>
+        кроме синтаксиса, но он читается намного хуже и усложняет понимание.
+    -->
+
+    <style>
+        @import '.././css/style2.css';
+    </style>
+
+</head>
+<body>
+
+<!--
+     Как я и говорил на прошлых уроках, HTML существует только для разметки контента,
+     но не несет в себе никакой стилизации элементов. За это отвечает язык CSS.
+
+    Все визуальные отличия тегов друг от друга мы видим только благодаря тому
+    что браузер имеет свою таблицу стилей которая работает по-умолчанию.
+
+    Как вы уже поняли, для того чтобы мы могли стилизовать элементы сами, нам
+    нужно будет использовать язык CSS.
+
+    Разберемся как его внедрить на нашу страницу.
+ -->
+
+
+<!-- Способ #1 - inline styles -->
+
+<!--
+    Одним из общих атрибутов для каждого тега, является атрибут style, внутри которого
+    мы и можем писать наш CSS код.
+-->
+
+<div>
+    <h1 style="color: red">Some Title - <a href="#">link</a></h1>
+
+    <div style="font-weight: bold">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, quia!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, quia!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, quia!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, quia!</p>
+    </div>
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum cumque in ipsum itaque magnam
+            molestiae optio quis. Aspernatur corporis ea earum enim facilis reprehenderit sequi, tempora tempore vel
+            vitae.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum cumque in ipsum itaque magnam
+            molestiae optio quis. Aspernatur corporis ea earum enim facilis reprehenderit sequi, tempora tempore vel
+            vitae.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum cumque in ipsum itaque magnam
+            molestiae optio quis. Aspernatur corporis ea earum enim facilis reprehenderit sequi, tempora tempore vel
+            vitae.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum cumque in ipsum itaque magnam
+            molestiae optio quis. Aspernatur corporis ea earum enim facilis reprehenderit sequi, tempora tempore vel
+            vitae.
+        </p>
+    </div>
+</div>
+
+
+</body>
+</html>
